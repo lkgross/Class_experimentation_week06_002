@@ -79,6 +79,22 @@ print("We checked all the mountains.")
 
 print()
 
+# The elements of mountain_info are themselves lists.
+mountain_info = [['Mount Kilimanjaro', 5895], ['Mount Kenya', 5199],
+                 ['Mount Stanley', 5109], ['Speke', 4562]]
+
+# For example, mountain_info[3] is a list.
+print(mountain_info[3])
+
+# As such, you can index into mountain_info[3] to get each element of mountain_info[3].
+print(mountain_info[3][0])
+print(mountain_info[3][1])
+
+# As always, we can change one of the names of the mountains
+# using indexing to modify the list (overwrite an "old mountain" with a new mountain.
+mountain_info[3][0] = 'Mount Meru'
+print(mountain_info)
+
 
 
 
