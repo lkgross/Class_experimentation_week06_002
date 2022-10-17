@@ -95,6 +95,35 @@ print(mountain_info[3][1])
 mountain_info[3][0] = 'Mount Meru'
 print(mountain_info)
 
+print()
+
+taxpayer_info = [ ['Alejandra Dani', 1_124_812], ['Nayeli Cora', 40_280],
+                  ['Hazel Kaia', 61_304]]
+taxpayer_info.append(['Emma Jude', 2_360_059])
+print(taxpayer_info)
+
+info0 = taxpayer_info[0]
+print(info0)
+info0.append('jointly')
+print(info0)
+taxpayer_info[2][1] = 2_000_000
+
+taxpayer_info[1].append('individually')
+
+print(taxpayer_info)
+print("The following people would be subject to the fair-share tax:")
+# Loop through the taxpayer info.
+# If the salary > 1_000_000,
+# print the name of the taxpayer.
+
+for info in taxpayer_info:
+    if info[1] > 1_000_000:
+        print(info[0])
+print('People with salaries over $1 million would be charged an '
+      'extra 4% income tax if the Fair-Share Amendment passes.')
+
+
+
 
 
 
